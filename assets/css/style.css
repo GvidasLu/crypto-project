@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+.zen-kurinaido {
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
 body {
    margin: 0px;
    padding: 0px;
@@ -25,8 +29,11 @@ a {
     position: relative;
 }
 
-.logo img {
+.logo {
     height: 50px;
+    font-size: 30px;
+    font-weight: 00;
+    color: black;
 }
 
 nav {
