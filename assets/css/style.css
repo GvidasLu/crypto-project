@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .zen-kurinaido {
     font-family: 'Zen Kurenaido', sans-serif;
 }
@@ -128,7 +132,6 @@ nav ul li a:hover {
     align-items: center;
     color: rgb(90, 118, 253);
     border: 2px solid #5a76fd;
-    box-shadow: 5px 10px 30px rgba(90, 118, 253, 0.5);
     text-transform: uppercase;
     font-weight: 600;
     font-size: 0.9rem;
@@ -138,6 +141,7 @@ nav ul li a:hover {
     background-color: #5a76fd;
     color: #fff;
     transition: all ease 0.3s;
+    box-shadow: 5px 10px 30px rgba(90, 118, 253, 0.5);
 }
 
 .timing {
@@ -224,7 +228,7 @@ nav ul li a:hover {
 }
 
 .services-heading {
-    margin-top: 60px;
+    padding-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -265,7 +269,8 @@ nav ul li a:hover {
     text-align: center;
     box-shadow: 2px 2px 2px rgba(90, 118, 253, 0.15);
     border-radius: 10px;
-    background-color: #fff;
+    /* background-color: rgb(241 235 235 / 31%); */
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.5),rgb(136, 191, 255)); 
     margin: 20px;
     flex-grow: 1;
 }
@@ -273,7 +278,7 @@ nav ul li a:hover {
 .box img {
     height: 150px;
     margin: 10px;
-    filter: invert(69%) sepia(147%) saturate(7527%) hue-rotate(235deg) brightness(192%) contrast(223%);
+    filter: invert(69%) sepia(100%) saturate(7527%) hue-rotate(235deg) brightness(160%) contrast(223%);
 }
 
 .box font {
@@ -342,7 +347,13 @@ nav ul li a:hover {
 .media li {
     padding: 5px;
     margin: 5px;
+    transition: 0.3s;
+    border-radius: 15%;
 }
+
+.media li:hover a {
+    filter: invert(1);
+} 
 
 /* .media ul:hover, li:hover {
     background-color: #5a76fd;
@@ -351,12 +362,12 @@ nav ul li a:hover {
     transition: all ease 0.3s;
 } */
 
+
 .instagram:hover {
     color: #fff;
     box-shadow: 5px 10px 30px rgba(90, 118, 253, 0.5);
     transition: all ease 0.3s;
     background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-    border-radius: 15%;
 } 
 
 .tiktok:hover {
@@ -399,6 +410,21 @@ footer p {
 
 nav .menu-button {
     display: none;
+}
+
+.home-img {
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+}
+
+@-webkit-keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+@keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
 }
 
 @media (max-width:1100px) {
@@ -510,7 +536,7 @@ nav .menu-button {
         margin: 0px;
         position: static;
         transform: translate(0px, 70px);
-        background-image: url("../img/Screenshot_3.png");
+        background-image: url("../img/crypto-minimal-btc.svg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top right;
@@ -521,7 +547,6 @@ nav .menu-button {
         color: #fff;
         padding: 0px 20px;
         font-size: 2.5rem;
-        border: 1px solid #fff;
     }
 
     .home-text p {
@@ -547,7 +572,7 @@ nav .menu-button {
 @media (max-width:720px) {
     
     .home-text p {
-        width: 70px;
+        font-size: 25px;
         text-align: center;
     }
 
