@@ -126,14 +126,17 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #5a76fd;
-    color: #fff;
+    color: rgb(90, 118, 253);
+    border: 2px solid #5a76fd;
     box-shadow: 5px 10px 30px rgba(90, 118, 253, 0.5);
     text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9rem;
 }
 
 .main-login:hover {
     background-color: #5a76fd;
+    color: #fff;
     transition: all ease 0.3s;
 }
 
